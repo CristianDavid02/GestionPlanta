@@ -1,0 +1,116 @@
+:root{
+    --fondo-container:rgba(0,0,0,0.55);
+    --responsive-form:65%;
+    --responsive-container:70%;
+    --padding-input:6px;
+    --radius-border:10px;
+    --sombra-color:rgb(221,221,221);
+    --borde-focus:rgb(88, 8, 8);
+}
+
+/*Pagina de login*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    background: url(/Imagenes/Ciudad-luz.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.container{
+    background-color: var(--fondo-container);
+    border-radius: 25px;
+    height: 80vh;
+    width: 50vw;
+    max-height: 600px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form{
+    height: var(--responsive-form);
+    width: var(--responsive-form);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form .container-input{  
+    width: var(--responsive-container);
+    max-width: 400px;
+    margin-top: 40px;
+    border-radius: var(--radius-border);
+    position: relative;
+    
+}
+
+
+.container-input.user::before{
+    content: url(/Imagenes/User_3.svg);
+    padding-top: 4px;
+    position: absolute;
+    left: 10px;
+    border: 0;
+}
+
+.container-input.password::before{
+    content: url(/Imagenes/Candado-1.svg);
+    padding-top: 4px;
+    position: absolute;
+    left: 10px;
+    border: 0;
+}
+
+.input{
+    height: 32px;
+    font-size: 18px;
+    padding-left: 20%;
+    border-radius: var(--radius-border);
+    width: 80%;
+    border: 0;
+    outline: 0px;
+    color: black;
+    
+}
+
+.input:hover{
+    background: var(--sombra-color);
+    border: none;
+    transition: 10ms;
+}
+
+.input:focus{
+    outline: 4px solid var(--borde-focus);
+    background: var(--sombra-color);
+    border: 0;
+    transition: 10ms;
+    margin: 0;
+}
+
+.form .container-button{  
+    width: var(--responsive-form);
+    max-width: 400px;
+    margin-top: 80px;
+    border-radius: var(--radius-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.button{
+    height: 32px;
+    width: 80%;
+    max-width: 180px;
+    border-radius: var(--radius-border);
+    outline: 0px;
+}
