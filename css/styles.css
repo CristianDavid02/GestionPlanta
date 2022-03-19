@@ -29,7 +29,7 @@ html{
     margin: 0;
     height: 100vh;
     padding: 0;
-    background: url(./Imagenes/Ciudad-luz.jpeg);
+    background: url(/Imagenes/Ciudad-luz.jpeg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ html{
 }
 
 .inputUser{
-    background-image: url(./Imagenes/User_3.svg);
+    background-image: url(/Imagenes/User_3.svg);
     background-size: 25px 25px;
     width: 100%;
     max-width: 300px;
@@ -74,7 +74,7 @@ html{
 }
 
 .inputPassword{
-    background-image: url(./Imagenes/Candado-1.svg);
+    background-image: url(/Imagenes/Candado-1.svg);
     background-size: 25px 25px;
     width: 100%;
     max-width: 300px;
@@ -90,21 +90,26 @@ html{
 
 .inputUser:focus{
     outline: none; 
-    box-shadow: 0px 5px 15px 8px rgba(0255, 255, 255,0.66);
+    box-shadow: 0px 5px 5px 5px rgba(0255, 255, 255,0.66);
 }
 
 .inputPassword:focus{
     outline: none; 
-    box-shadow: 0px 5px 15px 8px rgba(0255, 255, 255,0.66);
+    box-shadow: 0px 5px 5px 5px rgba(0255, 255, 255,0.66);
 }
 
 .inputUser:hover{
-    box-shadow: 0px 5px 15px 8px rgba(0255, 255, 255,0.66);
+    box-shadow: 0px 5px 5px 5px rgba(0255, 255, 255,0.66);
     
 }
 
 .inputPassword:hover{
-    box-shadow: 0px 5px 15px 8px rgba(0255, 255, 255,0.66);
+    box-shadow: 0px 5px 5px 5px rgba(0255, 255, 255,0.66);
+    
+}
+
+.buttonForm:hover{
+    box-shadow: 0px 5px 5px 5px rgba(0255, 255, 255,0.66);
     
 }
 
@@ -124,5 +129,9 @@ html{
 
 .recoverAccount:hover{
     color: #FF0000;
+}
+
+.buttonForm:active{
+    transform: scale(0.95);
 }
 
