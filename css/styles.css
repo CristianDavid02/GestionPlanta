@@ -29,7 +29,7 @@ html{
     margin: 0;
     height: 100vh;
     padding: 0;
-    background: url(/Imagenes/Ciudad-luz.jpeg);
+    background: url(./Imagenes/Ciudad-luz.jpeg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ html{
 }
 
 .inputUser{
-    background-image: url(/Imagenes/User_3.svg);
+    background-image: url(./Imagenes/User_3.svg);
     background-size: 25px 25px;
     width: 100%;
     max-width: 300px;
@@ -74,7 +74,7 @@ html{
 }
 
 .inputPassword{
-    background-image: url(/Imagenes/Candado-1.svg);
+    background-image: url(./Imagenes/Candado-1.svg);
     background-size: 25px 25px;
     width: 100%;
     max-width: 300px;
