@@ -1,16 +1,30 @@
 :root{
     --fondo-container:rgba(0,0,0,0.55);
-    --responsive-form:65%;
+    --responsive-form:70%;
     --responsive-container:70%;
+    --responsive-inputWhidth:80%;
     --padding-input:6px;
     --radius-border:10px;
     --sombra-color:rgb(221,221,221);
     --borde-focus:rgb(88, 8, 8);
 }
 
+
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: black;
+}
 /*Pagina de login*/
 
-body{
+html{
+    font-size: 18px;
+}
+
+.home{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     height: 100vh;
@@ -19,15 +33,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     
 }
 
 .container{
     background-color: var(--fondo-container);
     border-radius: 25px;
-    height: 80vh;
-    width: 50vw;
+    height: 80%;
+    width: 70%;
     max-height: 600px;
     max-width: 500px;
     display: flex;
@@ -35,82 +48,81 @@ body{
     align-items: center;
 }
 
-
-.form{
+.formHome{
     height: var(--responsive-form);
     width: var(--responsive-form);
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-
-.form .container-input{  
-    width: var(--responsive-container);
-    max-width: 400px;
-    margin-top: 40px;
-    border-radius: var(--radius-border);
-    position: relative;
-    
-}
-
-
-.container-input.user::before{
-    content: url(/Imagenes/User_3.svg);
-    padding-top: 4px;
-    position: absolute;
-    left: 10px;
-    border: 0;
-}
-
-.container-input.password::before{
-    content: url(/Imagenes/Candado-1.svg);
-    padding-top: 4px;
-    position: absolute;
-    left: 10px;
-    border: 0;
-}
-
-.input{
-    height: 32px;
-    font-size: 18px;
-    padding-left: 20%;
-    border-radius: var(--radius-border);
-    width: 80%;
-    border: 0;
-    outline: 0px;
-    color: black;
-    
-}
-
-.input:hover{
-    background: var(--sombra-color);
-    border: none;
-    transition: 10ms;
-}
-
-.input:focus{
-    outline: 4px solid var(--borde-focus);
-    background: var(--sombra-color);
-    border: 0;
-    transition: 10ms;
-    margin: 0;
-}
-
-.form .container-button{  
-    width: var(--responsive-form);
-    max-width: 400px;
-    margin-top: 80px;
-    border-radius: var(--radius-border);
-    display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.inputUser{
+    background-image: url(/Imagenes/User_3.svg);
+    background-size: 25px 25px;
+    width: 100%;
+    max-width: 300px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 32px;
+    font-size: 1rem;
+    color: black;
+    padding-left: 6px;
+    border-radius: var(--radius-border);
+}
+
+.inputPassword{
+    background-image: url(/Imagenes/Candado-1.svg);
+    background-size: 25px 25px;
+    width: 100%;
+    max-width: 300px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 32px;
+    font-size: 1rem;
+    color: black;
+    padding-left: 6px;
+    border-radius: var(--radius-border);
+}
+    
+
+.inputUser:focus{
+    outline: none; 
+    box-shadow: 0px 5px 15px 8px rgba(0255, 255, 255,0.66);
+}
+
+.inputPassword:focus{
+    outline: none; 
+    box-shadow: 0px 5px 15px 8px rgba(0255, 255, 255,0.66);
+}
+
+.inputUser:hover{
+    box-shadow: 0px 5px 15px 8px rgba(0255, 255, 255,0.66);
     
 }
-.button{
+
+.inputPassword:hover{
+    box-shadow: 0px 5px 15px 8px rgba(0255, 255, 255,0.66);
+    
+}
+
+.buttonForm{
     height: 32px;
     width: 80%;
     max-width: 180px;
     border-radius: var(--radius-border);
     outline: 0px;
 }
+
+.recoverAccount{
+    margin-top: 10px;
+    color:white;
+    font-size: 12px;
+}
+
+.recoverAccount:hover{
+    color: #FF0000;
+}
+
