@@ -1,6 +1,6 @@
 :root{
     --fondo-container:rgba(0,0,0,0.55);
-    --responsive-form:70%;
+    --responsive-form:60%;
     --responsive-container:70%;
     --responsive-inputWhidth:80%;
     --padding-input:6px;
@@ -69,7 +69,7 @@ html{
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
     box-sizing: border-box;
 }
 
@@ -149,14 +149,13 @@ html{
 .containerLog{
     border-radius: 25px;
     display: flex;
-    gap: 1rem;
-    width: 80%;
+    width: 55%;
     justify-content: space-between;
 }
 
 .containerLog img{
-    height: 350px;
-    width: 230px;
+    height: 280px;
+    width: 160px;
     border-radius: var(--radius-border);
     opacity: 0.6;
     border: 2 solid black;
