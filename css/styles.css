@@ -8,7 +8,7 @@
     --sombra-color:rgb(221,221,221);
     --borde-focus:rgb(88, 8, 8);
     --responsive-media-width:70%;
-    --responsive-media-heigth:50%;
+    --responsive-media-heigth:70%;
 
 }
 
@@ -69,6 +69,7 @@ html{
     flex-wrap: wrap;
     flex-direction: column;
     gap: 3rem;
+    box-sizing: border-box;
 }
 
 .inputUser{
@@ -154,7 +155,8 @@ html{
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
+        box-sizing: border-box;
     }
     
     .inputUser{
