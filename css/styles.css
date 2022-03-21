@@ -7,6 +7,9 @@
     --radius-border:10px;
     --sombra-color:rgb(221,221,221);
     --borde-focus:rgb(88, 8, 8);
+    --responsive-media-width:70%;
+    --responsive-media-heigth:50%;
+
 }
 
 
@@ -18,7 +21,7 @@
     border: 0;
     color: black;
 }
-/*Pagina de login*/
+/*pag the login*/
 
 html{
     font-size: 18px;
@@ -29,25 +32,33 @@ html{
     margin: 0;
     height: 100vh;
     padding: 0;
-    background: url(../Imagenes/Ciudad-luz.jpeg);
+    background: url(../Imagenes/fond-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    border:3px solid red;
+    border: 2px solid red;
+    box-sizing: border-box;
+    
     
 }
 
 .container{
     background-color: var(--fondo-container);
     border-radius: 25px;
-    height: 80%;
+    height: 50%;
     width: 70%;
     max-height: 600px;
     max-width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 100px;
+    position: absolute;
+    
 }
 
 .formHome{
@@ -92,28 +103,25 @@ html{
 
 .inputUser:focus{
     outline: none; 
-    box-shadow: 0px 5px 5px 5px rgba(0255, 255, 255,0.66);
+    box-shadow: 0px 2px 2px 2px rgba(0255, 255, 255,0.66);
 }
 
 .inputPassword:focus{
     outline: none; 
-    box-shadow: 0px 5px 5px 5px rgba(0255, 255, 255,0.66);
+    box-shadow: 0px 2px 2px 2px rgba(0255, 255, 255,0.66);
 }
 
 .inputUser:hover{
-    box-shadow: 0px 5px 5px 5px rgba(0255, 255, 255,0.66);
+    box-shadow: 0px 2px 2px 2px rgba(0255, 255, 255,0.66);
     
 }
 
 .inputPassword:hover{
-    box-shadow: 0px 5px 5px 5px rgba(0255, 255, 255,0.66);
+    box-shadow: 0px 2px 2px 2px rgba(0255, 255, 255,0.66);
     
 }
 
-.buttonForm:hover{
-    box-shadow: 0px 5px 5px 5px rgba(0255, 255, 255,0.66);
-    
-}
+
 
 .buttonForm{
     height: 32px;
@@ -137,3 +145,67 @@ html{
     transform: scale(0.95);
 }
 
+@media screen and (max-width: 900px){
+
+    .formHome{
+        height: var(--responsive-media-heigth);
+        width: var(--responsive-media-width);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .inputUser{
+        background-image: url(../Imagenes/User_3.svg);
+        background-size: 15px 15px;
+        width: 100%;
+        max-width: 300px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        height: 20px;
+        font-size: 0.8rem;
+        color: black;
+        padding-left: 4px;
+        border-radius: var(--radius-border);
+    }
+    
+    .inputPassword{
+        background-image: url(../Imagenes/Candado-1.svg);
+        background-size: 15px 15px;
+        width: 100%;
+        max-width: 300px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        height: 20px;
+        font-size: 0.8rem;
+        color: black;
+        padding-left: 4px;
+        border-radius: var(--radius-border);
+    }
+
+    .container{
+        background-color: var(--fondo-container);
+        border-radius: 25px;
+        height: 50%;
+        width: 65%;
+        max-height: 600px;
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttonForm{
+        height: 20px;
+        width: 65%;
+        max-width: 180px;
+        border-radius: var(--radius-border);
+        outline: 0px;
+        font-size: 0.8rem;
+
+    }
+
+}
