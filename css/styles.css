@@ -40,7 +40,6 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
     box-sizing: border-box;
     
     
@@ -208,4 +207,9 @@ html{
 
     }
 
+    .recoverAccount{
+        margin-top: 5px;
+        color:white;
+        font-size: 0.5rem;
+    }
 }
