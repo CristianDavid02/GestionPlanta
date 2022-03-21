@@ -184,7 +184,7 @@ html{
         background-repeat: no-repeat;
         background-position: right center;
         height: 20px;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         color: black;
         padding-left: 4px;
         border-radius: var(--radius-border);
@@ -198,7 +198,7 @@ html{
         background-repeat: no-repeat;
         background-position: right center;
         height: 20px;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
         color: black;
         padding-left: 4px;
         border-radius: var(--radius-border);
@@ -222,7 +222,7 @@ html{
         max-width: 180px;
         border-radius: var(--radius-border);
         outline: 0px;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
 
     }
 
