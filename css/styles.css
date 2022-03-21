@@ -41,6 +41,8 @@ html{
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    flex-direction: column;
+    gap: 1.5rem;
     
     
 }
@@ -56,7 +58,6 @@ html{
     justify-content: center;
     align-items: center;
     top: 100px;
-    position: absolute;
     
 }
 
@@ -145,6 +146,20 @@ html{
     transform: scale(0.95);
 }
 
+.containerLog{
+    border-radius: 25px;
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.containerLog img{
+    height: 350px;
+    width: 230px;
+    border-radius: var(--radius-border);
+}
+
 @media screen and (max-width: 900px){
 
     .formHome{
@@ -213,5 +228,9 @@ html{
         margin-top: 5px;
         color:white;
         font-size: 0.5rem;
+    }
+
+    .containerLog{
+        display: none;
     }
 }
